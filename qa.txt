@@ -1,0 +1,136 @@
+ContinuousPrescriptionIG : Validation Results
+=========================================
+
+err = 0, warn = 14, info = 12
+IG Publisher Version: 1.5.14
+Generated Thu Jan 25 03:15:17 CST 2024. FHIR version 4.0.1 for continuousprescription.MI-TW-2023-WG5#0.1.0 (canonical = https://prescription.cgh.org.tw)
+ Build Errors : 3 / 13 / 0
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/fsh-generated/resources/ImplementationGuide-continuousprescription.MI-TW-2023-WG5 : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/fsh-generated/resources/StructureDefinition-MedicationAdministration-tw-ContinuousPrescription : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/fsh-generated/resources/StructureDefinition-MedicationDispense-tw-ContinuousPrescription : 0 / 0 / 2
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/fsh-generated/resources/StructureDefinition-MedicationRequest-tw-ContinuousPrescription : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/MI-TW2023_Track#5SC1_T1_MedicationRequest_active_Create_20230815 : 0 / 0 / 3
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/MI-TW2023_Track#5SC1_T3_MedicationRequest_completed_Update_20230815 : 0 / 0 / 3
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_First Fill_Create_20230815 : 0 / 0 / 3
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_Refill-Complete_Create_20230815 : 0 / 0 / 3
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_Refill_Create_20230815 : 0 / 0 / 3
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/MI-TW2023_Track#5SC1_T6_MedicationAdministration_Create_20230815 : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/Organization-PRN.1101020018 : 0 / 0 / 2
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/Patient-a82fe11b-9927-4232-9c6b-c3747860bdd4 : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/examples/Practitioner-CGH.KP00023 : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/CapabilityStatement-CapabilityStatementCareProviderApp : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/CapabilityStatement-CapabilityStatementEHRRepository : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/CapabilityStatement-CapabilityStatementPatientApp : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/CapabilityStatement-CapabilityStatementPharmacyApp : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-code : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-effective-time : 0 / 1 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-id : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-identifier : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-medication : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-patient : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-performer : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-request : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-status : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationAdministration-subject : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-code : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-id : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-identifier : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-medication : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-patient : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-performer : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-prescription : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-status : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-subject : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-type : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationDispense-whenhandedover : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-authoredon : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-category : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-code : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-date : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-id : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-identifier : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-intent : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-medication : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-patient : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-status : 0 / 0 / 1
+ /Users/lin/ContinuousPrescriptionIG_cathayholdings/input/resources/SearchParameter-MedicationRequest-subject : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/CGH.KP00023.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationAdministration/MedicationAdministration-Create-20230815.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/MedicationDispense-Create-FirstFill-20230815.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/MedicationDispense-Create-Refill-20230815.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/MedicationDispense-Create-RefillComplete-20230815.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedicationRequest-Create-Active-20230815.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedicationRequest-Update-Completed-20230815.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/a82fe11b-9927-4232-9c6b-c3747860bdd4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/PRN.1101020018.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/lin/ContinuousPrescriptionIG_cathayholdings/output/ImplementationGuide-continuousprescription.MI-TW-2023-WG5.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 192, column 8: The link 'ImplementationGuide-continuousprescription.MI-TW-2023-WG5.xml.html' for "XML" cannot be resolved
+ERROR: /Users/lin/ContinuousPrescriptionIG_cathayholdings/output/ImplementationGuide-continuousprescription.MI-TW-2023-WG5.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 199, column 8: The link 'ImplementationGuide-continuousprescription.MI-TW-2023-WG5.json.html' for "JSON" cannot be resolved
+ERROR: /Users/lin/ContinuousPrescriptionIG_cathayholdings/output/ImplementationGuide-continuousprescription.MI-TW-2023-WG5.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 206, column 8: The link 'ImplementationGuide-continuousprescription.MI-TW-2023-WG5.ttl.html' for "TTL" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-continuousprescription.MI-TW-2023-WG5.json ==
+== fsh-generated/resources/StructureDefinition-MedicationAdministration-tw-ContinuousPrescription.json ==
+== fsh-generated/resources/StructureDefinition-MedicationDispense-tw-ContinuousPrescription.json ==
+INFORMATION: StructureDefinition/MedicationDispense-tw-ContinuousPrescription: StructureDefinition.snapshot.element[28].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-MedicationRequest-tw-ContinuousPrescription.json ==
+== input/examples/MI-TW2023_Track#5SC1_T1_MedicationRequest_active_Create_20230815.json ==
+INFORMATION: MedicationRequest/MedicationRequest-Create-Active-20230815: MedicationRequest.category[0].coding[0].system: A definition for CodeSystem 'https://www.nhi.gov.tw/iccard2.0/M07' could not be found, so the code cannot be validated
+INFORMATION: MedicationRequest/MedicationRequest-Create-Active-20230815: MedicationRequest.dosageInstruction[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|0.1.0
+== input/examples/MI-TW2023_Track#5SC1_T3_MedicationRequest_completed_Update_20230815.json ==
+INFORMATION: MedicationRequest/MedicationRequest-Update-Completed-20230815: MedicationRequest.category[0].coding[0].system: A definition for CodeSystem 'https://www.nhi.gov.tw/iccard2.0/M07' could not be found, so the code cannot be validated
+INFORMATION: MedicationRequest/MedicationRequest-Update-Completed-20230815: MedicationRequest.dosageInstruction[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|0.1.0
+== input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_First Fill_Create_20230815.json ==
+INFORMATION: MedicationDispense/MedicationDispense-Create-FirstFill-20230815: MedicationDispense.category.coding[0]: A definition for CodeSystem 'https://www.nhi.gov.tw/iccard2.0/M07' could not be found, so the code cannot be validated
+INFORMATION: MedicationDispense/MedicationDispense-Create-FirstFill-20230815: MedicationDispense.dosageInstruction[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|0.1.0
+== input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_Refill-Complete_Create_20230815.json ==
+INFORMATION: MedicationDispense/MedicationDispense-Create-RefillComplete-20230815: MedicationDispense.category.coding[0]: A definition for CodeSystem 'https://www.nhi.gov.tw/iccard2.0/M07' could not be found, so the code cannot be validated
+INFORMATION: MedicationDispense/MedicationDispense-Create-RefillComplete-20230815: MedicationDispense.dosageInstruction[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|0.1.0
+== input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_Refill_Create_20230815.json ==
+INFORMATION: MedicationDispense/MedicationDispense-Create-Refill-20230815: MedicationDispense.category.coding[0]: A definition for CodeSystem 'https://www.nhi.gov.tw/iccard2.0/M07' could not be found, so the code cannot be validated
+INFORMATION: MedicationDispense/MedicationDispense-Create-Refill-20230815: MedicationDispense.dosageInstruction[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|0.1.0
+== input/examples/MI-TW2023_Track#5SC1_T6_MedicationAdministration_Create_20230815.json ==
+== input/examples/Organization-PRN.1101020018.json ==
+INFORMATION: Organization/PRN.1101020018: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|0.1.0
+== input/examples/Patient-a82fe11b-9927-4232-9c6b-c3747860bdd4.json ==
+== input/examples/Practitioner-CGH.KP00023.json ==
+== input/resources/CapabilityStatement-CapabilityStatementCareProviderApp.json ==
+== input/resources/CapabilityStatement-CapabilityStatementEHRRepository.json ==
+== input/resources/CapabilityStatement-CapabilityStatementPatientApp.json ==
+== input/resources/CapabilityStatement-CapabilityStatementPharmacyApp.json ==
+== input/resources/SearchParameter-MedicationAdministration-code.json ==
+== input/resources/SearchParameter-MedicationAdministration-effective-time.json ==
+WARNING: SearchParameter/MedicationAdministration-effective-time: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== input/resources/SearchParameter-MedicationAdministration-id.json ==
+== input/resources/SearchParameter-MedicationAdministration-identifier.json ==
+== input/resources/SearchParameter-MedicationAdministration-medication.json ==
+== input/resources/SearchParameter-MedicationAdministration-patient.json ==
+== input/resources/SearchParameter-MedicationAdministration-performer.json ==
+== input/resources/SearchParameter-MedicationAdministration-request.json ==
+== input/resources/SearchParameter-MedicationAdministration-status.json ==
+== input/resources/SearchParameter-MedicationAdministration-subject.json ==
+== input/resources/SearchParameter-MedicationDispense-code.json ==
+== input/resources/SearchParameter-MedicationDispense-id.json ==
+== input/resources/SearchParameter-MedicationDispense-identifier.json ==
+== input/resources/SearchParameter-MedicationDispense-medication.json ==
+== input/resources/SearchParameter-MedicationDispense-patient.json ==
+== input/resources/SearchParameter-MedicationDispense-performer.json ==
+== input/resources/SearchParameter-MedicationDispense-prescription.json ==
+== input/resources/SearchParameter-MedicationDispense-status.json ==
+== input/resources/SearchParameter-MedicationDispense-subject.json ==
+== input/resources/SearchParameter-MedicationDispense-type.json ==
+== input/resources/SearchParameter-MedicationDispense-whenhandedover.json ==
+== input/resources/SearchParameter-MedicationRequest-authoredon.json ==
+== input/resources/SearchParameter-MedicationRequest-category.json ==
+== input/resources/SearchParameter-MedicationRequest-code.json ==
+== input/resources/SearchParameter-MedicationRequest-date.json ==
+== input/resources/SearchParameter-MedicationRequest-id.json ==
+== input/resources/SearchParameter-MedicationRequest-identifier.json ==
+== input/resources/SearchParameter-MedicationRequest-intent.json ==
+== input/resources/SearchParameter-MedicationRequest-medication.json ==
+== input/resources/SearchParameter-MedicationRequest-patient.json ==
+== input/resources/SearchParameter-MedicationRequest-status.json ==
+== input/resources/SearchParameter-MedicationRequest-subject.json ==

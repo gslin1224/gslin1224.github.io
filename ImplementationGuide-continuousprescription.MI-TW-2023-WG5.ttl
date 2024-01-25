@@ -1,0 +1,1282 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://prescription.cgh.org.tw/ImplementationGuide/continuousprescription.MI-TW-2023-WG5> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "continuousprescription.MI-TW-2023-WG5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ContinuousPrescriptionIG</h2><p>The official URL for this implementation guide is: </p><pre>https://prescription.cgh.org.tw/ImplementationGuide/continuousprescription.MI-TW-2023-WG5</pre><div><p>An draft IG that describing Taiwan Continuous Prescription Request Formulary Opening, Dispensing, and Medication Administration Workflow</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://prescription.cgh.org.tw/ImplementationGuide/continuousprescription.MI-TW-2023-WG5"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ContinuousPrescriptionIG"] ; # 
+  fhir:title [ fhir:v "HL7 FHIR Implementation Guide: Continuous Prescription IG Release 0.1.0 - TW | STU1"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-01-25T03:14:46+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Cathay Holdings"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Cathay Holdings" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.cathayholdings.com/holdings/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "shvoidlee@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "An draft IG that describing Taiwan Continuous Prescription Request Formulary Opening, Dispensing, and Medication Administration Workflow"] ; # 
+  fhir:packageId [ fhir:v "continuousprescription.MI-TW-2023-WG5"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "twcore" ] ;
+     fhir:uri [
+       fhir:v "https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore"^^xsd:anyURI ;
+       fhir:link <https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore>
+     ] ;
+     fhir:packageId [ fhir:v "tw.gov.mohw.twcore" ] ;
+     fhir:version [ fhir:v "0.1.1" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://prescription.cgh.org.tw/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://prescription.cgh.org.tw/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/Patient/a82fe11b-9927-4232-9c6b-c3747860bdd4> ;
+         fhir:reference [ fhir:v "Patient/a82fe11b-9927-4232-9c6b-c3747860bdd4" ]
+       ] ;
+       fhir:name [ fhir:v "a82fe11b-9927-4232-9c6b-c3747860bdd4" ] ;
+       fhir:example [
+         fhir:v "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Patient-twcore"^^xsd:anyURI ;
+         fhir:link <https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Patient-twcore>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/Practitioner/CGH.KP00023> ;
+         fhir:reference [ fhir:v "Practitioner/CGH.KP00023" ]
+       ] ;
+       fhir:name [ fhir:v "CGH.KP00023" ] ;
+       fhir:example [
+         fhir:v "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore"^^xsd:anyURI ;
+         fhir:link <https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/MedicationAdministration/MedicationAdministration-Create-20230815> ;
+         fhir:reference [ fhir:v "MedicationAdministration/MedicationAdministration-Create-20230815" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministration-Create-20230815" ] ;
+       fhir:example [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/MedicationDispense/MedicationDispense-Create-FirstFill-20230815> ;
+         fhir:reference [ fhir:v "MedicationDispense/MedicationDispense-Create-FirstFill-20230815" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationDispense-Create-FirstFill-20230815" ] ;
+       fhir:example [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/MedicationDispense/MedicationDispense-Create-Refill-20230815> ;
+         fhir:reference [ fhir:v "MedicationDispense/MedicationDispense-Create-Refill-20230815" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationDispense-Create-Refill-20230815" ] ;
+       fhir:example [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationDispense" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/MedicationDispense/MedicationDispense-Create-RefillComplete-20230815> ;
+         fhir:reference [ fhir:v "MedicationDispense/MedicationDispense-Create-RefillComplete-20230815" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationDispense-Create-RefillComplete-20230815" ] ;
+       fhir:example [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/MedicationRequest/MedicationRequest-Create-Active-20230815> ;
+         fhir:reference [ fhir:v "MedicationRequest/MedicationRequest-Create-Active-20230815" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest-Create-Active-20230815" ] ;
+       fhir:example [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/MedicationRequest/MedicationRequest-Update-Completed-20230815> ;
+         fhir:reference [ fhir:v "MedicationRequest/MedicationRequest-Update-Completed-20230815" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest-Update-Completed-20230815" ] ;
+       fhir:example [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-code> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-code" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationcode" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的藥品代碼(medication code)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-effective-time> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-effective-time" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationeffective-time" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的實際用藥時間effective-time" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-id> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-id" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationid" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的邏輯性id" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationidentifier" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的識別碼(identifier)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-medication> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-medication" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationmedication" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的藥品(medication)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-patient" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationpatient" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的病人(patient)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-performer> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-performer" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationperformer" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的執行者(performer)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-request> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-request" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationrequest" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的來源處方(request)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-status> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-status" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationstatus" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的狀態(status)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministration-subject" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationAdministrationsubject" ] ;
+       fhir:description [ fhir:v "藥品處方用藥紀錄的對象(subject)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-code> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-code" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensecode" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的藥品代碼(medication code)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-id> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-id" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispenseid" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的邏輯性id" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispenseidentifier" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的識別碼(identifier)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-medication> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-medication" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensemedication" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的藥品(medication)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-patient" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensepatient" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的病人(patient)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-performer> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-performer" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispenseperformer" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的執行者(performer)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-prescription> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-prescription" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispenseprescription" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的來源處方(prescription)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-status> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-status" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensestatus" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的狀態(status)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-subject" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensesubject" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的對象(subject)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-type> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-type" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensetype" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的類別(type)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-whenhandedover> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationDispense-whenhandedover" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationDispensewhenhandedover" ] ;
+       fhir:description [ fhir:v "藥品處方發藥紀錄的交付時間whenhandedover" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-authoredon> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-authoredon" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestauthoredon" ] ;
+       fhir:description [ fhir:v "藥品處方的開立時間authoredon" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-category> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-category" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestcategory" ] ;
+       fhir:description [ fhir:v "藥品處方的分類(category)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-code> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-code" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestcode" ] ;
+       fhir:description [ fhir:v "藥品處方的藥品代碼(medication code)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-date> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-date" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestdate" ] ;
+       fhir:description [ fhir:v "藥品處方的指示用藥時間date" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-id> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-id" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestid" ] ;
+       fhir:description [ fhir:v "藥品處方的邏輯性id" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestidentifier" ] ;
+       fhir:description [ fhir:v "藥品處方的識別碼(identifier)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-intent> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-intent" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestintent" ] ;
+       fhir:description [ fhir:v "藥品處方的意圖(intent)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-medication> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-medication" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestmedication" ] ;
+       fhir:description [ fhir:v "藥品處方的藥品(medication)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-patient" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestpatient" ] ;
+       fhir:description [ fhir:v "藥品處方的病人(patient)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-status> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-status" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequeststatus" ] ;
+       fhir:description [ fhir:v "藥品處方的狀態(status)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-subject> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationRequest-subject" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameterMedicationRequestsubject" ] ;
+       fhir:description [ fhir:v "藥品處方的對象(subject)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationAdministration-tw-ContinuousPrescription" ]
+       ] ;
+       fhir:name [ fhir:v "TW Continuous Prescription MedicationAdministration" ] ;
+       fhir:description [ fhir:v "此為臺灣慢性連續處方之用藥紀錄(TW Continuous Prescription MedicationAdministration) Profile說明本IG如何進一步定義FHIR的MedicationAdministration Resource以呈現台灣慢性連續處方的詳細資料  [[*FMM1*](http://build.fhir.org/versions.html#maturity)]" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationDispense-tw-ContinuousPrescription" ]
+       ] ;
+       fhir:name [ fhir:v "TW Continuous Prescription MedicationDispense" ] ;
+       fhir:description [ fhir:v "此臺灣慢性連續處方之給藥紀錄(TW Continuous Prescription MedicationDispense) Profile說明本IG如何進一步定義FHIR的MedicationDispense Resource以呈現台灣慢性連續處方的詳細資料  [[*FMM1*](http://build.fhir.org/versions.html#maturity)]" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationRequest-tw-ContinuousPrescription" ]
+       ] ;
+       fhir:name [ fhir:v "TW Continuous Prescription MedicationRequest" ] ;
+       fhir:description [ fhir:v "此臺灣慢性連續處方(TW Continuous Prescription MedicationRequest) Profile說明本IG如何進一步定義FHIR的MedicationRequest Resource以呈現台灣慢性連續處方的詳細資料  [[*FMM1*](http://build.fhir.org/versions.html#maturity)]" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/Organization/PRN.1101020018> ;
+         fhir:reference [ fhir:v "Organization/PRN.1101020018" ]
+       ] ;
+       fhir:name [ fhir:v "國泰醫療財團法人國泰綜合醫院" ] ;
+       fhir:example [
+         fhir:v "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore"^^xsd:anyURI ;
+         fhir:link <https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Organization-hosp-twcore>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementPatientApp> ;
+         fhir:reference [ fhir:v "CapabilityStatement/CapabilityStatementPatientApp" ]
+       ] ;
+       fhir:name [ fhir:v "連續性用藥處方工作流程-病患個人箋應用系統" ] ;
+       fhir:description [ fhir:v "連續性用藥處方工作流程-病患個人應用系統端(Patient App)之能力聲明" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementPharmacyApp> ;
+         fhir:reference [ fhir:v "CapabilityStatement/CapabilityStatementPharmacyApp" ]
+       ] ;
+       fhir:name [ fhir:v "連續性用藥處方工作流程-藥局應用系統" ] ;
+       fhir:description [ fhir:v "連續性用藥處方工作流程-藥局應用系統端(Pharmacy App)之能力聲明" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementCareProviderApp> ;
+         fhir:reference [ fhir:v "CapabilityStatement/CapabilityStatementCareProviderApp" ]
+       ] ;
+       fhir:name [ fhir:v "連續性用藥處方工作流程-開立處方箋應用系統" ] ;
+       fhir:description [ fhir:v "連續性用藥處方工作流程-開立處方箋應用系統端(Care Provider App)之能力聲明" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementEHRRepository> ;
+         fhir:reference [ fhir:v "CapabilityStatement/CapabilityStatementEHRRepository" ]
+       ] ;
+       fhir:name [ fhir:v "連續性用藥處方工作流程-電子病歷儲存庫(EHR Repository)伺服器端(Server)" ] ;
+       fhir:description [ fhir:v "連續性用藥處方工作流程-電子病歷儲存庫(EHR Repository)伺服器端(Server)之能力聲明" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Capability.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Capability.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Capability" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Copyright.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Copyright.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Copyright" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Download.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Download.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Download" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "MedicationAdministrationExample.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministrationExample.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Medication Administration Example" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "MedicationDispenseExample.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispenseExample.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Medication Dispense Example" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "MedicationRequestExample.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequestExample.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Medication Request Example" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Profiles.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SearchParameters.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "SearchParameters.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Search Parameters" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Security.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Security.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Security" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Terminologies.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Terminologies.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Terminologies" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "History.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "History.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "History" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "ImplementationGuide-continuousprescription.MI-TW-2023-WG5.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "ImplementationGuide-continuousprescription.MI-TW-2023-WG5.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "ImplementationGuide" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="MedicationRequest-Create-Active-20230815"/>
+  <meta>
+    <profile value="https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="MedicationRequest-Create-Active-20230815"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;MedicationRequest-Create-Active-20230815&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationRequest-tw-ContinuousPrescription.html">TW Continuous Prescription MedicationRequest</a></p></div><p><b>identifier</b>: Serial Number: 0005</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: 8-1.就醫類別 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (M07#01)</span></p><p><b>medication</b>: GLIBEN TABLETS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medication-fda-tw.html">臺灣藥品許可證</a>#衛署藥製字第002863號 &quot;固利康錠&quot;)</span></p><p><b>subject</b>: <a href="Patient-a82fe11b-9927-4232-9c6b-c3747860bdd4.html">Patient/a82fe11b-9927-4232-9c6b-c3747860bdd4</a> &quot;&quot;</p><p><b>authoredOn</b>: 2023-08-01 10:30:00+0800</p><p><b>requester</b>: <a href="Organization-PRN.1101020018.html">Organization/PRN.1101020018</a> &quot;國泰醫療財團法人國泰綜合醫院&quot;</p><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: 糖尿病口服藥三餐飯前</p><p><b>timing</b>: Code: 飯前</p><p><b>route</b>: 口眼 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-medication-path-tw.html">臺灣給藥途徑</a>#PO)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><p><b>validityPeriod</b>: 2023-08-01 --&gt; 2023-10-23</p><p><b>numberOfRepeatsAllowed</b>: 3</p><p><b>quantity</b>: 84 TAB<span style="background: LightGoldenRodYellow"> (Details: http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm code TAB = 'Tablet')</span></p><h3>ExpectedSupplyDurations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Unit</b></td><td><b>System</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>28</td><td>days</td><td><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a></td><td>d</td></tr></table><p><b>performer</b>: <a href="Organization-PRN.1101020018.html">Organization/PRN.1101020018</a> &quot;國泰醫療財團法人國泰綜合醫院&quot;</p></blockquote></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="SNO"/>
+      </coding>
+    </type>
+    <system value="https://www.nhi.gov.tw/iccard2.0/M13"/>
+    <value value="0005"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="https://www.nhi.gov.tw/iccard2.0/M07"/>
+      <code value="01"/>
+      <display value="8-1.就醫類別"/>
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw"/>
+      <code value="衛署藥製字第002863號"/>
+      <display value="固利康錠"/>
+    </coding>
+    <text value="GLIBEN TABLETS"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/a82fe11b-9927-4232-9c6b-c3747860bdd4"/>
+  </subject>
+  <authoredOn value="2023-08-01T10:30:00+08:00"/>
+  <requester>
+    <reference value="Organization/PRN.1101020018"/>
+  </requester>
+  <dosageInstruction>
+    <sequence value="1"/>
+    <text value="糖尿病口服藥三餐飯前"/>
+    <timing>
+      <code>
+        <coding>
+          <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-frequency-tw"/>
+          <code value="AC"/>
+          <display value="飯前"/>
+        </coding>
+      </code>
+    </timing>
+    <route>
+      <coding>
+        <system value="https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-path-tw"/>
+        <code value="PO"/>
+        <display value="口眼"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+          <code value="ordered"/>
+        </coding>
+      </type>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="TAB"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+        <code value="TAB"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dispenseRequest>
+    <validityPeriod>
+      <start value="2023-08-01"/>
+      <end value="2023-10-23"/>
+    </validityPeriod>
+    <numberOfRepeatsAllowed value="3"/>
+    <quantity>
+      <value value="84"/>
+      <unit value="TAB"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+      <code value="TAB"/>
+    </quantity>
+    <expectedSupplyDuration>
+      <value value="28"/>
+      <unit value="days"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="d"/>
+    </expectedSupplyDuration>
+    <performer>
+      <reference value="Organization/PRN.1101020018"/>
+    </performer>
+  </dispenseRequest>
+</MedicationRequest>

@@ -1,0 +1,282 @@
+[
+  {
+    "id" : "CapabilityStatementCareProviderApp",
+    "type" : "CapabilityStatement",
+    "url" : "https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementCareProviderApp",
+    "version" : "0.1.0",
+    "name" : "CapabilityStatementCareProviderApp"
+  },
+  {
+    "id" : "CapabilityStatementEHRRepository",
+    "type" : "CapabilityStatement",
+    "url" : "https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementEHRRepository",
+    "version" : "0.1.0",
+    "name" : "CapabilityStatementEHRRepository"
+  },
+  {
+    "id" : "CapabilityStatementPatientApp",
+    "type" : "CapabilityStatement",
+    "url" : "https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementPatientApp",
+    "version" : "0.1.0",
+    "name" : "CapabilityStatementPatientApp"
+  },
+  {
+    "id" : "CapabilityStatementPharmacyApp",
+    "type" : "CapabilityStatement",
+    "url" : "https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementPharmacyApp",
+    "version" : "0.1.0",
+    "name" : "CapabilityStatementPharmacyApp"
+  },
+  {
+    "id" : "continuousprescription.MI-TW-2023-WG5",
+    "type" : "ImplementationGuide",
+    "url" : "https://prescription.cgh.org.tw/ImplementationGuide/continuousprescription.MI-TW-2023-WG5",
+    "version" : "0.1.0",
+    "name" : "ContinuousPrescriptionIG"
+  },
+  {
+    "id" : "MedicationAdministration-code",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-code",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationcode"
+  },
+  {
+    "id" : "MedicationAdministration-effective-time",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-effective-time",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationeffective-time"
+  },
+  {
+    "id" : "MedicationAdministration-id",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-id",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationid"
+  },
+  {
+    "id" : "MedicationAdministration-identifier",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-identifier",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationidentifier"
+  },
+  {
+    "id" : "MedicationAdministration-medication",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-medication",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationmedication"
+  },
+  {
+    "id" : "MedicationAdministration-patient",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-patient",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationpatient"
+  },
+  {
+    "id" : "MedicationAdministration-performer",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-performer",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationperformer"
+  },
+  {
+    "id" : "MedicationAdministration-request",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-request",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationrequest"
+  },
+  {
+    "id" : "MedicationAdministration-status",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-status",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationstatus"
+  },
+  {
+    "id" : "MedicationAdministration-subject",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-subject",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationAdministrationsubject"
+  },
+  {
+    "id" : "MedicationDispense-code",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-code",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensecode"
+  },
+  {
+    "id" : "MedicationDispense-id",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-id",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispenseid"
+  },
+  {
+    "id" : "MedicationDispense-identifier",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-identifier",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispenseidentifier"
+  },
+  {
+    "id" : "MedicationDispense-medication",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-medication",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensemedication"
+  },
+  {
+    "id" : "MedicationDispense-patient",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-patient",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensepatient"
+  },
+  {
+    "id" : "MedicationDispense-performer",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-performer",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispenseperformer"
+  },
+  {
+    "id" : "MedicationDispense-prescription",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-prescription",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispenseprescription"
+  },
+  {
+    "id" : "MedicationDispense-status",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-status",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensestatus"
+  },
+  {
+    "id" : "MedicationDispense-subject",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-subject",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensesubject"
+  },
+  {
+    "id" : "MedicationDispense-type",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-type",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensetype"
+  },
+  {
+    "id" : "MedicationDispense-whenhandedover",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-whenhandedover",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationDispensewhenhandedover"
+  },
+  {
+    "id" : "MedicationRequest-authoredon",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-authoredon",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestauthoredon"
+  },
+  {
+    "id" : "MedicationRequest-category",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-category",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestcategory"
+  },
+  {
+    "id" : "MedicationRequest-code",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-code",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestcode"
+  },
+  {
+    "id" : "MedicationRequest-date",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-date",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestdate"
+  },
+  {
+    "id" : "MedicationRequest-id",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-id",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestid"
+  },
+  {
+    "id" : "MedicationRequest-identifier",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-identifier",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestidentifier"
+  },
+  {
+    "id" : "MedicationRequest-intent",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-intent",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestintent"
+  },
+  {
+    "id" : "MedicationRequest-medication",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-medication",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestmedication"
+  },
+  {
+    "id" : "MedicationRequest-patient",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-patient",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestpatient"
+  },
+  {
+    "id" : "MedicationRequest-status",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-status",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequeststatus"
+  },
+  {
+    "id" : "MedicationRequest-subject",
+    "type" : "SearchParameter",
+    "url" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-subject",
+    "version" : "0.1.0",
+    "name" : "SearchParameterMedicationRequestsubject"
+  },
+  {
+    "id" : "MedicationAdministration-tw-ContinuousPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription",
+    "version" : "0.1.0",
+    "name" : "TWContinuousPrescriptionMedicationAdministration"
+  },
+  {
+    "id" : "MedicationDispense-tw-ContinuousPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription",
+    "version" : "0.1.0",
+    "name" : "TWContinuousPrescriptionMedicationDispense"
+  },
+  {
+    "id" : "MedicationRequest-tw-ContinuousPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription",
+    "version" : "0.1.0",
+    "name" : "TWContinuousPrescriptionMedicationRequest"
+  }
+]

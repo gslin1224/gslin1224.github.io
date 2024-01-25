@@ -1,0 +1,506 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementCareProviderApp> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CapabilityStatementCareProviderApp"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CapabilityStatementCareProviderApp</h2><div><p>連續性用藥處方工作流程-開立處方箋應用系統端(Care Provider App)之能力聲明</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>使用連續性用藥處方工作流程-開立處方箋應用系統端能力聲明中的查詢參數，支援新增、更新、讀取和查詢一個或多個Profile(s)。</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>MedicationRequest</td><td><a href=\"https://prescription.cgh.org.tw/StructureDefinition-MedicationRequest-tw-ContinuousPrescription.html\">https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>MedicationDispense</td><td><a href=\"https://prescription.cgh.org.tw/StructureDefinition-MedicationDispense-tw-ContinuousPrescription.html\">https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationAdministration</td><td><a href=\"https://prescription.cgh.org.tw/StructureDefinition-MedicationAdministration-tw-ContinuousPrescription.html\">https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementCareProviderApp"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CapabilityStatementCareProviderApp"] ; # 
+  fhir:title [ fhir:v "連續性用藥處方工作流程-開立處方箋應用系統"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Cathay Holdings"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Cathay Holdings" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.cathayholdings.com/holdings/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "shvoidlee@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "連續性用藥處方工作流程-開立處方箋應用系統端(Care Provider App)之能力聲明"] ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
+  fhir:patchFormat ( [ fhir:v "application/json-patch+json"] ) ; # 
+  fhir:implementationGuide ( [
+     fhir:v "https://prescription.cgh.org.tw"^^xsd:anyURI ;
+     fhir:link <https://prescription.cgh.org.tw>
+  ] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "client" ] ;
+     fhir:documentation [ fhir:v "使用連續性用藥處方工作流程-開立處方箋應用系統端能力聲明中的查詢參數，支援新增、更新、讀取和查詢一個或多個Profile(s)。" ] ;
+     fhir:resource ( [
+       fhir:type [ fhir:v "MedicationRequest" ] ;
+       fhir:profile [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition-MedicationRequest-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition-MedicationRequest-tw-ContinuousPrescription> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:referencePolicy ( [ fhir:v "resolves" ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-id" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-id"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-identifier" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-identifier"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-status" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-status"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-status>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-intent" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-intent"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-intent>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-category" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-category"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-category>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-code" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-code"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-code>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-medication" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-medication"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-medication>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-date" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-date"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-date>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-authoredon" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-authoredon"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-authoredon>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-patient" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-patient"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-patient>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationRequest-subject" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-subject"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-subject>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "MedicationDispense" ] ;
+       fhir:profile [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:referencePolicy ( [ fhir:v "resolves" ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-id" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-id"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-identifier" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-identifier"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-status" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-status"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-status>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-type" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-type"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-type>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-code" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-code"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-code>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-medication" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-medication"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-medication>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-whenhandedover" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-whenhandedover"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-whenhandedover>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-prescription" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-prescription"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-prescription>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-patient" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-patient"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-patient>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-subject" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-subject"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-subject>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationDispense-performer" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-performer"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-performer>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "MedicationAdministration" ] ;
+       fhir:profile [
+         fhir:v "https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription"^^xsd:anyURI ;
+         fhir:link <https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "vread" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:referencePolicy ( [ fhir:v "resolves" ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-id" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-id"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-id>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-identifier" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-identifier"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-identifier>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-status" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-status"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-status>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-code" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-code"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-code>
+         ] ;
+         fhir:type [ fhir:v "token" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-medication" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-medication"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-medication>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-effective-time" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-effective-time"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-effective-time>
+         ] ;
+         fhir:type [ fhir:v "date" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-request" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-request"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-request>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-patient" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-patient"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-patient>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-subject" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-subject"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-subject>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "MedicationAdministration-performer" ] ;
+         fhir:definition [
+           fhir:v "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-performer"^^xsd:anyURI ;
+           fhir:link <https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-performer>
+         ] ;
+         fhir:type [ fhir:v "reference" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

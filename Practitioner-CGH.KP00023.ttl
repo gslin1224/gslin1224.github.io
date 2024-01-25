@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://prescription.cgh.org.tw/Practitioner/CGH.KP00023> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CGH.KP00023"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore"^^xsd:anyURI ;
+       fhir:link <https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"CGH.KP00023\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;CGH.KP00023&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/StructureDefinition-Practitioner-twcore.html\">TW Core Practitioner</a></p></div><p><b>identifier</b>: Medical License number: KP00023 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: 王依昇(OFFICIAL)</p><p><b>telecom</b>: ph: 0912345678(MOBILE)</p><p><b>gender</b>: male</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>西醫師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://twcore.mohw.gov.tw/ig/twcore/0.1.1/CodeSystem-health-professional-tw.html\">臺灣醫事人員類別</a>#A)</span></td><td>2005-05-25 --&gt; (ongoing)</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.cgh.org.tw/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "KP00023" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "王依昇" ] ;
+     fhir:family [ fhir:v "Wang" ] ;
+     fhir:given ( [ fhir:v "Yi Sheng" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0912345678" ] ;
+     fhir:use [ fhir:v "mobile" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2022-07-31"^^xsd:date ] ;
+       fhir:end [ fhir:v "2024-07-31"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/health-professional-tw"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2005-05-25"^^xsd:date ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

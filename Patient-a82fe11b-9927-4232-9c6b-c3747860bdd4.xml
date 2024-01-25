@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="a82fe11b-9927-4232-9c6b-c3747860bdd4"/>
+  <meta>
+    <profile value="https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Patient-twcore"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>國某泰(OFFICIAL)</b> male, DoB: 1999-01-01 ( Medical record number: cgh19910101A123456789 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">National Person Identifier where the xxx is the ISO table 3166 3-character (alphabetic) country code: A123456789 (use: OFFICIAL)</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+    </type>
+    <system value="https://www.cgh.org.tw/"/>
+    <value value="cgh19910101A123456789"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NNxxx"/>
+      </coding>
+    </type>
+    <system value="http://www.moi.gov.tw/"/>
+    <value value="A123456789"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <text value="國某泰"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1999-01-01"/>
+</Patient>

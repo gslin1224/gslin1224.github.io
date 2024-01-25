@@ -1,0 +1,391 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-timing",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real world event relating to the schedule.",
+      "oids" : ["2.16.840.1.113883.4.642.4.76"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Category Codes",
+      "title" : "Medication administration  category  codes",
+      "description" : "MedicationAdministration Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-category.html" : "Medication administration  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Status Codes",
+      "title" : "Medication administration  status  codes",
+      "description" : "MedicationAdministration Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1311"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationDispensePerformerFunctionCodes",
+      "title" : "MedicationDispense Performer Function Codes",
+      "description" : "MedicationDispense Performer Function Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1319"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationdispense-performer-function.html" : "Medication dispense  performer  function  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationdispense-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Codes",
+      "title" : "Medication dispense  status  codes",
+      "description" : "MedicationDispense Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1313"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationdispense-status.html" : "Medication dispense  status  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCategoryCodes",
+      "title" : "MedicationRequest Category Codes",
+      "description" : "MedicationRequest Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "MedicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "MedicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html" : "Reason Medication Given Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "8.0.1",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "GTSAbbreviation",
+      "title" : "GTSAbbreviation",
+      "description" : "*Open Issue:* It appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+      "oids" : ["2.16.840.1.113883.5.1022"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-timing-abbreviation.html" : "TimingAbbreviation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TimingEvent",
+      "title" : "TimingEvent",
+      "description" : "**** MISSING DESCRIPTION ****",
+      "oids" : ["2.16.840.1.113883.5.139"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitution",
+      "title" : "Substance Admin Substitution",
+      "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+      "oids" : ["2.16.840.1.113883.5.1070"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Category Codes",
+      "title" : "Medication dispense  category  codes",
+      "description" : "MedicationDispense Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1315"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationdispense-category.html" : "Medication dispense  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Reason Codes",
+      "title" : "Medication dispense  status  reason  codes",
+      "description" : "MedicationDispense Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1317"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationdispense-status-reason.html" : "Medication dispense  status  reason  codes"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime"
+    },
+    {
+      "url" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "RxNorm",
+      "title" : "RxNorm",
+      "description" : "RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software, including those of First Databank, Micromedex, and Gold Standard Drug Database. By providing links between these vocabularies, RxNorm can mediate messages between systems not using the same software and vocabulary. RxNorm now includes the United States Pharmacopeia (USP) Compendial Nomenclature from the United States Pharmacopeial Convention. USP is a cumulative data set of all Active Pharmaceutical Ingredients (API).",
+      "oids" : ["2.16.840.1.113883.6.88"],
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medication-rxnorm-tw.html" : "RxNorm藥品代碼值集"
+    },
+    {
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medcation-atc-tw.html" : "藥品藥理治療分類ATC碼值集"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-device-fda-tw",
+      "version" : "2022-08-08",
+      "status" : "active",
+      "name" : "TWMedicationDeviceFDA",
+      "title" : "臺灣醫療器材許可證",
+      "description" : "臺灣醫療器材許可證，參照自[https://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=68](https://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=68)  \r\n代碼出版日期：2022-08-08；資料所屬單位：衛生福利部食品藥物管理署。\r\n\r\n*因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*",
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medication-fda-tw.html" : "臺灣藥品及醫療器材代碼值集"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-fda-tw",
+      "version" : "2022-08-03",
+      "status" : "active",
+      "name" : "TWMedicationFDA",
+      "title" : "臺灣藥品許可證",
+      "description" : "臺灣藥品許可證，參照自[https://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=36](https://data.fda.gov.tw/frontsite/data/DataAction.do?method=doDetail&infoId=36)  \r\n代碼出版日期：2022-08-03；資料所屬單位：衛生福利部食品藥物管理署。\r\n\r\n*因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*",
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medication-fda-tw.html" : "臺灣藥品及醫療器材代碼值集"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-frequency-tw",
+      "version" : "2022-01-28",
+      "status" : "active",
+      "name" : "TWMedicationFrequency",
+      "title" : "臺灣藥品使用頻率",
+      "description" : "臺灣藥品使用頻率，參照至[https://dep.mohw.gov.tw/dos/lp-2503-113-xCat-DOS_dc002.html](https://dep.mohw.gov.tw/dos/lp-2503-113-xCat-DOS_dc002.html)-[Health06_全民健保處方及治療醫令明細檔_藥局](https://www.mohw.gov.tw/dl-16099-93a2fb9d-25a4-4e80-9508-88f5b317f6f9.html)  \r\n代碼出版日期：2014-03-05；資料所屬單位：衛生福利部統計處。\r\n\r\n*因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*",
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medication-frequency-tw.html" : "臺灣藥品使用頻率值集"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-nhi-tw",
+      "version" : "2022-07-28",
+      "status" : "active",
+      "name" : "TWMedicationNHI",
+      "title" : "臺灣健保用藥品項",
+      "description" : "臺灣健保用藥品項，參照自[https://www.nhi.gov.tw/Content_List.aspx?n=238507DCFE832EAE&topn=5FE8C9FEAE863B46](https://www.nhi.gov.tw/Content_List.aspx?n=238507DCFE832EAE&topn=5FE8C9FEAE863B46)  \r\n代碼出版日期：2022-08-03；資料所屬單位：衛生福利部中央健康保險署。\r\n\r\n*因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*",
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medication-nhi-tw.html" : "臺灣健保用藥品項代碼值集"
+    },
+    {
+      "url" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medication-path-tw",
+      "version" : "2022-01-28",
+      "status" : "active",
+      "name" : "TWMedicationPath",
+      "title" : "臺灣給藥途徑",
+      "description" : "臺灣給藥途徑，參照至[https://dep.mohw.gov.tw/dos/lp-2503-113-xCat-DOS_dc002.html](https://dep.mohw.gov.tw/dos/lp-2503-113-xCat-DOS_dc002.html)-[Health06_全民健保處方及治療醫令明細檔_藥局](https://www.mohw.gov.tw/dl-16099-93a2fb9d-25a4-4e80-9508-88f5b317f6f9.html)  \r\n代碼出版日期：2014-03-05；資料所屬單位：衛生福利部統計處。\r\n\r\n*因原始資料無代碼版本資訊，故使用其「更新日期」作為版本資訊。*",
+      "uses" : {
+      },
+      "https://twcore.mohw.gov.tw/ig/twcore/0.1.1/ValueSet-medication-path-tw.html" : "臺灣給藥途徑值集"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

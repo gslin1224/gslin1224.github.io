@@ -1,0 +1,2025 @@
+{
+  "date" : "Thu, 25 Jan, 2024 03:14:46 +0800",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-continuousprescription.MI-TW-2023-WG5.json",
+      "size" : 18299,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 192
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 21,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 374
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 126
+        },
+        {
+          "activity" : "generate2",
+          "start" : 30,
+          "length" : 83
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 20
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MedicationAdministration-tw-ContinuousPrescription.json",
+      "size" : 3585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 7
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 82
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 21,
+          "length" : 87
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 337
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 253
+        },
+        {
+          "activity" : "generate2",
+          "start" : 30,
+          "length" : 1552
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MedicationDispense-tw-ContinuousPrescription.json",
+      "size" : 43260,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 25
+        },
+        {
+          "activity" : "load",
+          "start" : 20,
+          "length" : 25
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 167
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 187
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 561
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 460
+        },
+        {
+          "activity" : "generate2",
+          "start" : 31,
+          "length" : 880
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 51,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MedicationRequest-tw-ContinuousPrescription.json",
+      "size" : 22463,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 17
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 173
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 181
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 467
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 411
+        },
+        {
+          "activity" : "generate2",
+          "start" : 32,
+          "length" : 1066
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MI-TW2023_Track#5SC1_T1_MedicationRequest_active_Create_20230815.json",
+      "size" : 3301,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 416
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 412
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MI-TW2023_Track#5SC1_T3_MedicationRequest_completed_Update_20230815.json",
+      "size" : 3307,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 30
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_First Fill_Create_20230815.json",
+      "size" : 3468,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 51
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_Refill-Complete_Create_20230815.json",
+      "size" : 3481,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MI-TW2023_Track#5SC1_T4_MedicationDispense_Refill_Create_20230815.json",
+      "size" : 3461,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/MI-TW2023_Track#5SC1_T6_MedicationAdministration_Create_20230815.json",
+      "size" : 1462,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Organization-PRN.1101020018.json",
+      "size" : 931,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-a82fe11b-9927-4232-9c6b-c3747860bdd4.json",
+      "size" : 942,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 78
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Practitioner-CGH.KP00023.json",
+      "size" : 1255,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CapabilityStatement-CapabilityStatementCareProviderApp.json",
+      "size" : 25943,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 64
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 25
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CapabilityStatement-CapabilityStatementEHRRepository.json",
+      "size" : 29394,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 17
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 41
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 21
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 36,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CapabilityStatement-CapabilityStatementPatientApp.json",
+      "size" : 25899,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 42
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 33
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 14
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/CapabilityStatement-CapabilityStatementPharmacyApp.json",
+      "size" : 26226,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 14
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 35
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 32
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-code.json",
+      "size" : 501,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-effective-time.json",
+      "size" : 542,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-id.json",
+      "size" : 468,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-identifier.json",
+      "size" : 517,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-medication.json",
+      "size" : 518,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-patient.json",
+      "size" : 500,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-performer.json",
+      "size" : 521,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-request.json",
+      "size" : 506,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-status.json",
+      "size" : 490,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationAdministration-subject.json",
+      "size" : 500,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-code.json",
+      "size" : 471,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-id.json",
+      "size" : 438,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 20
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-identifier.json",
+      "size" : 487,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-medication.json",
+      "size" : 488,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-patient.json",
+      "size" : 470,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-performer.json",
+      "size" : 491,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-prescription.json",
+      "size" : 517,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-status.json",
+      "size" : 460,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-subject.json",
+      "size" : 470,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-type.json",
+      "size" : 448,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationDispense-whenhandedover.json",
+      "size" : 511,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-authoredon.json",
+      "size" : 470,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-category.json",
+      "size" : 455,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-code.json",
+      "size" : 454,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-date.json",
+      "size" : 466,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-id.json",
+      "size" : 421,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-identifier.json",
+      "size" : 470,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-intent.json",
+      "size" : 443,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-medication.json",
+      "size" : 471,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-patient.json",
+      "size" : 453,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-status.json",
+      "size" : 443,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/SearchParameter-MedicationRequest-subject.json",
+      "size" : 453,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 4
+        }
+      ]
+    }
+  ]
+}

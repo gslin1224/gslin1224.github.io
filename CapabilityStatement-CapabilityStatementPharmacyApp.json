@@ -1,0 +1,443 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "CapabilityStatementPharmacyApp",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CapabilityStatementPharmacyApp</h2><div><p>連續性用藥處方工作流程-藥局應用系統端(Pharmacy App)之能力聲明</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>使用連續性用藥處方工作流程-藥局應用系統端能力聲明中的查詢參數，支援新增、更新、讀取和查詢一個或多個Profile(s)。</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>MedicationRequest</td><td><a href=\"https://prescription.cgh.org.tw/StructureDefinition-MedicationRequest-tw-ContinuousPrescription.html\">https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>MedicationDispense</td><td><a href=\"https://prescription.cgh.org.tw/StructureDefinition-MedicationDispense-tw-ContinuousPrescription.html\">https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>MedicationAdministration</td><td><a href=\"https://prescription.cgh.org.tw/StructureDefinition-MedicationAdministration-tw-ContinuousPrescription.html\">https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  },
+  "url" : "https://prescription.cgh.org.tw/CapabilityStatement/CapabilityStatementPharmacyApp",
+  "version" : "0.1.0",
+  "name" : "CapabilityStatementPharmacyApp",
+  "title" : "連續性用藥處方工作流程-藥局應用系統",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-31",
+  "publisher" : "Cathay Holdings",
+  "contact" : [{
+    "name" : "Cathay Holdings",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.cathayholdings.com/holdings/"
+    },
+    {
+      "system" : "email",
+      "value" : "shvoidlee@gmail.com"
+    }]
+  }],
+  "description" : "連續性用藥處方工作流程-藥局應用系統端(Pharmacy App)之能力聲明",
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["xml",
+  "json"],
+  "patchFormat" : ["application/json-patch+json"],
+  "implementationGuide" : ["https://prescription.cgh.org.tw"],
+  "rest" : [{
+    "mode" : "client",
+    "documentation" : "使用連續性用藥處方工作流程-藥局應用系統端能力聲明中的查詢參數，支援新增、更新、讀取和查詢一個或多個Profile(s)。",
+    "resource" : [{
+      "type" : "MedicationRequest",
+      "profile" : "https://prescription.cgh.org.tw/StructureDefinition/MedicationRequest-tw-ContinuousPrescription",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "update"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "vread"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "referencePolicy" : ["resolves"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-id",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-identifier",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-status",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-intent",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-intent",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-category",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-category",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-code",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-medication",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-medication",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-date",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-authoredon",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-authoredon",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-patient",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationRequest-subject",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationRequest-subject",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "MedicationDispense",
+      "profile" : "https://prescription.cgh.org.tw/StructureDefinition/MedicationDispense-tw-ContinuousPrescription",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "create"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "update"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "vread"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "referencePolicy" : ["resolves"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-id",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-identifier",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-status",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-type",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-type",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-code",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-medication",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-medication",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-whenhandedover",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-whenhandedover",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-prescription",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-prescription",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-patient",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-subject",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-subject",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationDispense-performer",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationDispense-performer",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "MedicationAdministration",
+      "profile" : "https://prescription.cgh.org.tw/StructureDefinition/MedicationAdministration-tw-ContinuousPrescription",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "vread"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "referencePolicy" : ["resolves"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-id",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-identifier",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-status",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-code",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-medication",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-medication",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-effective-time",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-effective-time",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-request",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-request",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-patient",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-subject",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-subject",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "MedicationAdministration-performer",
+        "definition" : "https://prescription.cgh.org.tw/SearchParameter/MedicationAdministration-performer",
+        "type" : "reference"
+      }]
+    }]
+  }]
+}
